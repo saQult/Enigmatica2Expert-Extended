@@ -168,6 +168,17 @@ zenClass MixinTileEntityDisplayStand {
     }
 }
 
+/*
+Increase max energy output rate to match working speed
+*/
+#mixin {targets: "de.ellpeck.actuallyadditions.mod.tile.TileEntityLeafGenerator"}
+zenClass MixinTileEntityLeafGenerator {
+    #mixin ModifyConstant {method: "<init>", constant: {intValue: 450}}
+    function increaseMaxExtract(value as int) as int {
+        return 2000;
+    }
+}
+
 #mixin {targets: "de.ellpeck.actuallyadditions.mod.items.ItemDrill"}
 zenClass MixinAAItemDrill {
     #mixin ModifyConstant {method: "*", constant: { intValue: 4 }}
