@@ -10,19 +10,39 @@ mods.jei.JEI.hideCategory('xu2_machine_extrautils2:generator');
 
 static machineBlock as IIngredient = <extrautils2:machine>.only(function(item){return !item.hasTag;});
 
+craft.remake(<extrautils2:spike_iron>, ['pretty',
+  '  S  ',
+  '□ M □',
+  '□ E □'], {
+  'S': <extrautils2:spike_stone>,
+  '□': <ore:plateIron>,
+  'M': <extrautils2:decorativesolidwood>,
+  'E': <extrautils2:ineffableglass>,
+});
+craft.remake(<extrautils2:spike_gold>, ['pretty',
+  '  I  ',
+  '□ S □',
+  '□ E □'], {
+  'I': <extrautils2:spike_iron>,
+  '□': <ore:plateGold>,
+  'S': <extrautils2:decorativesolid:3>,
+  'E': <extrautils2:ineffableglass>,
+});
+craft.remake(<extrautils2:spike_diamond>, ['pretty',
+  '  G  ',
+  'C Q C',
+  'C E C'], {
+  'G': <extrautils2:spike_gold>,
+  'C': <ore:itemCompressedDiamond>,
+  'Q': <extrautils2:decorativesolid:7>,
+  'E': <extrautils2:ineffableglass>,
+});
+
 // Recycle spikes
 scripts.process.melt(<extrautils2:spike_gold>, <fluid:gold> * (144 * 4));
 
 // Bag of Holding
 recipes.remove(<extrautils2:bagofholding>);
-
-// Diamond Spike
-recipes.remove(<extrautils2:spike_diamond>);
-recipes.addShapedMirrored('Diamond Spike',
-  <extrautils2:spike_diamond>,
-  [[null, <redstonearsenal:tool.sword_flux>.anyDamage(), null],
-    [<immersiveengineering:metal_decoration1_slab:5>, <ore:itemCompressedDiamond>, <immersiveengineering:metal_decoration1_slab:5>],
-    [<ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>, <ore:itemCompressedDiamond>]]);
 
 // Redstone Clock
 recipes.remove(<extrautils2:redstoneclock>);
