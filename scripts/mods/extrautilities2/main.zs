@@ -523,6 +523,24 @@ craft.make(<extrautils2:miner>, ['pretty',
   '♥': <ore:gearRedstone>,            // Redstone Gear
 });
 
+// Cheaper upgrades since they dont give this much benefits considering GP usage
+craft.remake(<extrautils2:ingredients:15> * 4, ['pretty',
+  'M ▬ M',
+  '▬ U ▬',
+  'M ▬ M'], {
+  'M': <extrautils2:magicapple>,
+  '▬': <ore:ingotEnchantedMetal>,
+  'U': <ore:xuUpgradeSpeed>,
+});
+craft.remake(<extrautils2:ingredients:16> * 4, ['pretty',
+  'd ▬ d',
+  '▬ U ▬',
+  'd ▬ d'], {
+  'd': <ore:dropofevil>,
+  '▬': <ore:ingotEvilMetal>,
+  'U': <ore:xuUpgradeSpeedEnchanted>,
+});
+
 // [Sandy Glass] from [Sand][+1]
 craft.reshapeless(<extrautils2:decorativesolid:4> * 6, 'sGGG', {
   's': <ore:sand>, // Sand
