@@ -14,6 +14,7 @@ import native.com.feed_the_beast.ftblib.lib.data.ForgePlayer;
 import native.com.feed_the_beast.ftbquests.net.MessageTogglePinned;
 import native.com.feed_the_beast.ftbquests.quest.ServerQuestFile;
 import native.com.feed_the_beast.ftbutilities.data.FTBUtilitiesPlayerData;
+import native.net.minecraft.entity.player.EntityPlayerMP;
 import native.net.minecraft.stats.StatList;
 
 /**
@@ -277,6 +278,14 @@ events.onCustomReward(function (e as mods.zenutils.ftbq.CustomRewardEvent) {
         crafttweaker.text.ITextComponent.fromTranslation('e2ee.quest.loot.additional')
       );
     }
+  }
+
+  /**
+  * Pin other quest
+  */
+  if (e.reward.tags has 'pin_another_quest') {
+    val what_is_this_quest_id = 81914138;
+    MessageTogglePinned(what_is_this_quest_id).onMessage(e.player.native as EntityPlayerMP);
   }
 });
 
