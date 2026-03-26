@@ -729,6 +729,7 @@ q.extra_utilities.resonator.desc=共振仪靠GP运作，能产出一些物品。
 q.extra_utilities.builders_wand.desc=建筑之杖帮助你放置至多9个你正在看向的方块。
 q.extra_utilities.golden_lasso.desc=黄金套索能捕捉被动型生物。你需要在常规工作台上合成它，且合成会消耗8级经验。
 q.extra_utilities.dark_glass.desc=它不透光，特别适合诅咒土刷怪场。
+q.extra_utilities.upgrade_mining.desc=§6采掘升级§r允许你挖掘通过§3流体交互§r生成的方块，例如，用于获取§5UU物质§r与§c岩浆§r反应产生的§8玄武岩沉积物§r。
 q.extra_utilities.cursed_earth.name=诅咒之土
 q.extra_utilities.cursed_earth.desc=用凋灵骷髅的罕见掉落物，邪恶点滴右键泥土或草方块就可以获得。\n\n诅咒之土会显著提升刷怪量，刷出的怪物也更具有攻击性，更强大。光照下会停止刷怪与蔓延。
 q.extra_utilities.mechanical_user.name=机械用户

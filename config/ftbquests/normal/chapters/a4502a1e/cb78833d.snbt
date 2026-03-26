@@ -1,8 +1,8 @@
 {
 	title: "{q.extra_utilities.mechanical_user.name}",
 	icon: "extrautils2:user",
-	x: -0.08333333333333331d,
-	y: 0.9583333333333333d,
+	x: -0.08333333333333333d,
+	y: 1.25d,
 	text: [
 		"{q.extra_utilities.mechanical_user.desc}"
 	],

@@ -731,6 +731,7 @@ q.extra_utilities.resonator.desc=The Resonator runs on GP, and can produce vario
 q.extra_utilities.builders_wand.desc=The Builder's Wand lets you place up to 9 of the same kind of block as the one you're looking at, given you have the blocks in your inventory.
 q.extra_utilities.golden_lasso.desc=The Golden Lasso can capture passive creatures. You will need to craft it in a normal crafting table, and it requires 8 XP levels to craft.
 q.extra_utilities.dark_glass.desc=This Glass doesn't let any light through - Excellent for Cursed Earth mobfarms.
+q.extra_utilities.upgrade_mining.desc=The §6Mining Upgrade§r allows you to mine blocks created by §3Fluid Interactions§r, for example, to obtain §8Basalt Sediments§r from the reaction between §5UU-Matter§r and §cLava§r.
 q.extra_utilities.cursed_earth.name=Cursed Earth
 q.extra_utilities.cursed_earth.desc=Cursed Earth is made by right-clicking Dirt or Grass with a Drop of Evil, which is a rare drop from Wither Skeletons.\n\nCursed Earth will drastically increase the spawn rate of monsters on it, and the monsters that spawn will be extra strong and aggressive. Light completely stops both the spawning and the spread of it.
 q.extra_utilities.mechanical_user.name=Mechanical User
