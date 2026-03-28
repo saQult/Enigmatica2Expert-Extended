@@ -3,15 +3,6 @@
 	loot_size: 1,
 	use_title: 1b,
 	rewards: [{
-		item: {
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "generators"
-			}
-		},
-		weight: 25
-	},
-	{
 		item: "actuallyadditions:item_spawner_changer"
 	},
 	{
