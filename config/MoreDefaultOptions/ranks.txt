@@ -48,4 +48,3 @@ ftbutilities.chunkloader.max_chunks: 300
 power: 100
 parent: vip
 default_op_rank: true
-ftbutilities.chat.name_format: <&2{name}&r>
