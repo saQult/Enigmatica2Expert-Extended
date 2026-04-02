@@ -433,6 +433,8 @@ Some of the changes from the `Extended` version [[1]](https://github.com/Enigmat
 [Permission to develop and publish from **Enigmatica** owner.
 ](https://github.com/NillerMedDild/Enigmatica2Expert/blob/d80cc094a7fa1dc750071f8848a96e154c2d40f2/LICENSE.md "E2E License")
 
+- [**TODO list**](https://gist.github.com/Krutoy242/b4a22715ac048ee42a33cb3e643bf76f#file-todo-md)
+
 ## Links
 
 - [CurseForge](https://www.curseforge.com/minecraft/modpacks/enigmatica-2-expert-extended)
