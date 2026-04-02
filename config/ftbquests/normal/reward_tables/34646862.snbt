@@ -7,7 +7,7 @@
 		count: 10
 	},
 	{
-		icon: "harvestcraft:redvelvetcakeitem 6",
+		icon: "harvestcraft:redvelvetcakeitem 4",
 		item: "harvestcraft:redvelvetcakeitem",
 		count: 4
 	},

@@ -8,6 +8,7 @@
 	{
 		title: "640",
 		item: "sonarcore:reinforcedstonebrick",
-		count: 640
+		count: 640,
+		icon: "sonarcore:reinforcedstonebrick 640"
 	}]
 }

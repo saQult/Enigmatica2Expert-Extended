@@ -3,16 +3,19 @@
 	rewards: [{
 		title: "64",
 		item: "mekanism:glowplasticblock 1 6",
-		count: 64
+		count: 64,
+		icon: "mekanism:glowplasticblock 64 6"
 	},
 	{
 		title: "640",
 		item: "randomthings:stainedbrick 1 3",
-		count: 640
+		count: 640,
+		icon: "randomthings:stainedbrick 640 3"
 	},
 	{
 		title: "6400",
 		item: "chisel:concrete_lightblue 1 5",
-		count: 6400
+		count: 6400,
+		icon: "chisel:concrete_lightblue 6400 5"
 	}]
 }

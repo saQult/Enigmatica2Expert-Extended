@@ -3,26 +3,32 @@
 	loot_size: 1,
 	rewards: [{
 		item: "thaumcraft:curio",
-		count: 10
+		count: 10,
+		icon: "thaumcraft:curio 10"
 	},
 	{
 		item: "thaumcraft:curio 1 1",
-		count: 10
+		count: 10,
+		icon: "thaumcraft:curio 10 1"
 	},
 	{
 		item: "thaumcraft:curio 1 2",
-		count: 10
+		count: 10,
+		icon: "thaumcraft:curio 10 2"
 	},
 	{
 		item: "thaumcraft:curio 1 2",
-		count: 10
+		count: 10,
+		icon: "thaumcraft:curio 10 2"
 	},
 	{
 		item: "thaumcraft:curio 1 4",
-		count: 10
+		count: 10,
+		icon: "thaumcraft:curio 10 4"
 	},
 	{
 		item: "thaumcraft:curio 1 5",
-		count: 10
+		count: 10,
+		icon: "thaumcraft:curio 10 5"
 	}]
 }
