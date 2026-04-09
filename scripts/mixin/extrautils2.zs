@@ -1,6 +1,7 @@
 #modloaded extrautils2
 #loader mixin
 
+import native.net.minecraft.util.EnumActionResult;
 import native.com.rwtema.extrautils2.api.machine.Machine;
 import native.com.rwtema.extrautils2.api.machine.MachineRegistry;
 import native.com.rwtema.extrautils2.api.machine.XUMachineCrusher;
@@ -127,3 +128,5 @@ zenClass MixinTileScreen {
         return 0.0f;
     }
 }
+
+
