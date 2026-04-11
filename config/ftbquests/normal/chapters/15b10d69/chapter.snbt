@@ -1,6 +1,6 @@
 {
 	title: "{q.industrial_foregoing.name}",
-	icon: "industrialforegoing:mob_duplicator",
+	icon: "industrialforegoing:villager_trade_exchanger",
 	description: [
 		"{q.industrial_foregoing.desc}"
 	],

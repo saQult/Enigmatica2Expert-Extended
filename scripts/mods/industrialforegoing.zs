@@ -122,15 +122,24 @@ scripts.mods.extendedcrafting_engineering.remakeAlted(
   '■': <mekanism:plasticblock:15>,
 });
 
+// Harder since doesnt require complicated setup and easy to supply
 craft.remake(<industrialforegoing:mob_duplicator>, ['pretty',
-  'R R R',
-  'B a B',
-  'M i M'], {
-  'R': <ore:itemRubber>,
-  'B': <exnihilocreatio:item_doll:*>,
-  'a': <teslacorelib:machine_case>,
+  '⌃ ⌃ ■ ■ ■ ⌃ ⌃',
+  '⌃ M D D D M ⌃',
+  '■ f ▬ ▬ ▬ f ■',
+  '■ R s i s R ■',
+  '■ f ▬ ▬ ▬ f ■',
+  '⌃ M D D D M ⌃',
+  '⌃ ⌃ ■ ■ ■ ⌃ ⌃'], {
+  '⌃': <extrautils2:decorativesolid:6>,
+  '■': <mekanism:plasticblock:*>,
   'M': <darkutils:monolith>,
-  'i': <contenttweaker:machine_case_singularity>.withTag({ completed: 1 as byte }),
+  'D': <iceandfire:dragon_ice_spikes>,
+  'f': <industrialforegoing:fertilizer>,
+  '▬': <ore:ingotGold198>,
+  'R': <industrialforegoing:laser_lens:*>,
+  's': <contenttweaker:ball_singularity>.withTag({completed: 1 as byte}),
+  'i': <contenttweaker:machine_case_singularity>.withTag({completed: 1 as byte}),
 });
 
 // [Laser Drill] from [Machine Frame][+4]
