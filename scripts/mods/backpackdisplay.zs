@@ -149,6 +149,31 @@ addBackDisplay(<scannable:module_block>, function(item) {
   return [result] as IItemStack[];
 });
 
+function nbtListToInvItems(listData as IData) as IItemStack[] {
+  if (isNull(listData)) return null;
+  val items = listData.asList();
+  if (isNull(items) || items.isEmpty()) return null;
+
+  var count = 0;
+  for it in items {
+    if (!isNull(it) && !isNull(it.id)) {
+      count += 1;
+    }
+  }
+
+  if (count == 0) return null;
+
+  val result = arrayOf(count, null as IItemStack);
+  var i = 0;
+  for it in items {
+    if (!isNull(it) && !isNull(it.id)) {
+      result[i] = it.toItemStack();
+      i += 1;
+    }
+  }
+  return result;
+}
+
 addBackDisplay(<scannable:scanner>, function(item) {
   if (
     isNull(item.tag)
@@ -217,3 +242,13 @@ addBackDisplay(<my_precious:rubble>, function(item) {
   if (isNull(item.tag) || isNull(item.tag.StoredItem)) return null;
   return [item.tag.StoredItem.toItemStack()] as IItemStack[];
 });
+
+/*
+Trinity Containers
+*/
+addBackDisplay(
+  <trinity:heavy_container:*> | <trinity:light_container:*> | <trinity:medium_container:*>,
+  function(item) {
+    return nbtListToInvItems(item.tag?.Items);
+  }
+);
