@@ -1,3 +1,10 @@
+/*
+
+Turn aspect lists into string with Emojis
+for better readability and more colorful source files ^_^
+
+*/
+
 #modloaded thaumcraft
 #priority 4000
 #reloadable
