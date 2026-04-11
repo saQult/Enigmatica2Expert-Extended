@@ -522,7 +522,7 @@ craft.remake(<randomthings:inventoryrerouter>, ['pretty',
 });
 
 // Magic Bean skyblock alt
-furnace.addRecipe(<twilightforest:magic_beans>, <randomthings:beans:2>, 50);
+mods.rats.recipes.addGemcutterRatRecipe(<randomthings:beans:2>, <twilightforest:magic_beans>);
 scripts.jei.crafting_hints.add1to1(<randomthings:beans:2>, <randomthings:beanpod>);
 
 // Used as ingredient
