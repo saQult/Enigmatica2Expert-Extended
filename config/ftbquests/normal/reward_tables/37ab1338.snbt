@@ -252,11 +252,6 @@
 		item: "mysticalagradditions:neutronium_seeds"
 	},
 	{
-		icon: "avaritia:singularity 2 8",
-		item: "avaritia:singularity 1 8",
-		count: 2
-	},
-	{
 		icon: "storagedrawers:upgrade_creative 64",
 		item: "storagedrawers:upgrade_creative",
 		count: 64
@@ -329,18 +324,6 @@
 		}
 	},
 	{
-		item: "additionalcompression:clay_compressed 1 9"
-	},
-	{
-		item: "additionalcompression:netherrack_compressed 1 9"
-	},
-	{
-		item: "additionalcompression:soulsand_compressed 1 9"
-	},
-	{
-		item: "additionalcompression:endstone_compressed 1 9"
-	},
-	{
 		item: {
 			id: "ic2:crystal_memory",
 			tag: {
@@ -361,19 +344,6 @@
 		item: "extrautils2:compoundbow"
 	},
 	{
-		item: {
-			id: "draconicevolution:draconic_shovel",
-			tag: {
-				DEUpgrades: {
-					digSpeed: 3b,
-					digAOE: 3b,
-					rfCap: 3b
-				},
-				Energy: 256000000
-			}
-		}
-	},
-	{
 		item: "extrautils2:fireaxe"
 	},
 	{
@@ -385,33 +355,14 @@
 		count: 3
 	},
 	{
-		icon: {
-			id: "mekanism:basicblock2",
-			Count: 4,
-			tag: {
-				tier: 3,
-				mekData: {
-					energyStored: 5.12E11d
-				}
-			},
-			Damage: 3s
-		},
-		item: {
-			id: "mekanism:basicblock2",
-			tag: {
-				tier: 3,
-				mekData: {
-					energyStored: 5.12E11d
-				}
-			},
-			Damage: 3s
-		},
-		count: 4
+		icon: "avaritia:singularity 16 12",
+		item: "avaritia:singularity 1 12",
+		count: 16
 	},
 	{
-		icon: "avaritia:singularity 2 12",
-		item: "avaritia:singularity 1 12",
-		count: 2
+		icon: "avaritia:singularity 16 8",
+		item: "avaritia:singularity 1 8",
+		count: 16
 	},
 	{
 		item: "avaritiaio:infinitecapacitor"
@@ -493,6 +444,244 @@
 				},
 				receiver: "Lucky pal"
 			}
+		}
+	},
+	{
+		item: {
+			id: "my_precious:rubble",
+			Count: 1,
+			tag: {
+				StoredItem: {
+					id: "draconicevolution:dislocator",
+					Count: 1,
+					tag: {
+						IsSet: 1b,
+						X: 0.5d,
+						Y: 255.0d,
+						Z: 0.5d,
+						Dimension: 124,
+						Pitch: 0.0f,
+						Yaw: 0.0f,
+						DimentionName: "Asteroid Belt"
+					},
+					Damage: 0s
+				}
+			},
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "draconicevolution:draconic_helm",
+			Count: 1,
+			tag: {
+				DEUpgrades: {
+					shieldRec: 3b,
+					shieldCap: 3b,
+					rfCap: 3b
+				},
+				Energy: 256000000
+			},
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "draconicevolution:draconic_chest",
+			Count: 1,
+			tag: {
+				DEUpgrades: {
+					shieldRec: 3b,
+					shieldCap: 3b,
+					rfCap: 3b
+				},
+				Energy: 256000000
+			},
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "draconicevolution:draconic_legs",
+			Count: 1,
+			tag: {
+				DEUpgrades: {
+					moveSpeed: 3b,
+					shieldRec: 3b,
+					shieldCap: 3b,
+					rfCap: 3b
+				},
+				Energy: 256000000
+			},
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "draconicevolution:draconic_boots",
+			Count: 1,
+			tag: {
+				DEUpgrades: {
+					shieldRec: 3b,
+					shieldCap: 3b,
+					rfCap: 3b,
+					jumpBoost: 3b
+				},
+				Energy: 256000000
+			},
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			ForgeCaps: {
+				Parent: {
+					Size: 18,
+					Items: []
+				}
+			},
+			id: "draconicevolution:draconic_pick",
+			Count: 1,
+			tag: {
+				DEUpgrades: {
+					digSpeed: 3b,
+					digAOE: 3b,
+					rfCap: 3b
+				},
+				Energy: 256000000
+			},
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "draconicevolution:draconic_sword",
+			Count: 1,
+			tag: {
+				DEUpgrades: {
+					attackDmg: 3b,
+					rfCap: 3b,
+					attackAOE: 3b
+				},
+				Energy: 256000000
+			},
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "draconicevolution:draconic_shovel",
+			tag: {
+				DEUpgrades: {
+					digSpeed: 3b,
+					digAOE: 3b,
+					rfCap: 3b
+				},
+				Energy: 256000000
+			}
+		}
+	},
+	{
+		item: {
+			id: "qmd:cell",
+			Count: 1,
+			tag: {
+				particle_storage: {
+					particle_amount: 100000,
+					particle_capacity: 100000
+				}
+			},
+			Damage: 9s
+		}
+	},
+	{
+		item: {
+			id: "qmd:cell",
+			Count: 1,
+			tag: {
+				particle_storage: {
+					particle_amount: 100000,
+					particle_capacity: 100000
+				}
+			},
+			Damage: 8s
+		}
+	},
+	{
+		item: {
+			id: "trinity:bomb_antimatter",
+			Count: 1,
+			Damage: 0s
+		}
+	},
+	{
+		item: {
+			id: "trinity:heavy_container",
+			Count: 1,
+			tag: {
+				x: 214,
+				y: 32,
+				z: 1354,
+				Items: [
+					{
+						Slot: 0b,
+						id: "trinity:bomb_bk248",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 1b,
+						id: "trinity:bomb_cf249",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 2b,
+						id: "trinity:bomb_cf251",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 3b,
+						id: "trinity:dirty_bomb",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 4b,
+						id: "trinity:gold_bomb",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 5b,
+						id: "trinity:dirty_bomb",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 6b,
+						id: "trinity:salted_bomb_bk248",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 7b,
+						id: "trinity:salted_bomb_cf249",
+						Count: 1,
+						Damage: 0s
+					},
+					{
+						Slot: 8b,
+						id: "trinity:salted_bomb_cf251",
+						Count: 1,
+						Damage: 0s
+					}
+				],
+				id: "trinity:tile_inventory_basic",
+				Radioactivity: 13.54940012899906d
+			},
+			Damage: 0s
 		}
 	},
 	{

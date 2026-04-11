@@ -50,6 +50,11 @@
 		count: 64
 	},
 	{
+		icon: "botania:vineball 64",
+		item: "botania:vineball",
+		count: 64
+	},
+	{
 		item: {
 			tag: {
 				blockName: "chisel:concrete_lightgray",
@@ -513,9 +518,28 @@
 		}
 	},
 	{
-		icon: "chisel:lapis 4 7",
-		item: "chisel:lapis 1 7",
-		count: 4
+		item: {
+			id: "openblocks:dev_null",
+			tag: {
+				enchantmentColor: 4408131,
+				ench: [{}],
+				Unbreakable: 1b,
+				infinite: {
+					id: "extrautils2:decorativesolid",
+					Count: 1,
+					Damage: 0s
+				},
+				inventory: {
+					size: 1,
+					Items: [{
+						Slot: 0b,
+						id: "extrautils2:decorativesolid",
+						Count: 64,
+						Damage: 0s
+					}]
+				}
+			}
+		}
 	},
 	{
 		icon: "mekanism:obsidiantnt 16",

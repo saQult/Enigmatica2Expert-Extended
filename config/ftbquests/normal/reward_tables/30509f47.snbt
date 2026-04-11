@@ -7,6 +7,38 @@
 		count: 16
 	},
 	{
+		icon: {
+			Count: 4,
+			tag: {
+				Material: "pigiron"
+			},
+			id: "tconstruct:large_plate"
+		},
+		item: {
+			tag: {
+				Material: "pigiron"
+			},
+			id: "tconstruct:large_plate"
+		},
+		count: 4
+	},
+	{
+		icon: {
+			Count: 3,
+			tag: {
+				Material: "xu_evil_metal"
+			},
+			id: "tconstruct:large_plate"
+		},
+		item: {
+			tag: {
+				Material: "xu_evil_metal"
+			},
+			id: "tconstruct:large_plate"
+		},
+		count: 3
+	},
+	{
 		icon: "chisel:icepillar 64 4",
 		item: "chisel:icepillar 1 4",
 		count: 64
@@ -221,38 +253,6 @@
 		icon: "tconstruct:dried_clay 16",
 		item: "tconstruct:dried_clay",
 		count: 16
-	},
-	{
-		icon: {
-			Count: 4,
-			tag: {
-				Material: "pigiron"
-			},
-			id: "tconstruct:large_plate"
-		},
-		item: {
-			tag: {
-				Material: "pigiron"
-			},
-			id: "tconstruct:large_plate"
-		},
-		count: 4
-	},
-	{
-		icon: {
-			Count: 3,
-			tag: {
-				Material: "xu_evil_metal"
-			},
-			id: "tconstruct:large_plate"
-		},
-		item: {
-			tag: {
-				Material: "xu_evil_metal"
-			},
-			id: "tconstruct:large_plate"
-		},
-		count: 3
 	},
 	{
 		item: "scalinghealth:crystalshard"

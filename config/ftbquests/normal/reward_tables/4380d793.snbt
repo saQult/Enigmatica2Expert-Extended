@@ -213,19 +213,19 @@
 		count: 16
 	},
 	{
-		icon: "advgenerators:turbine_kit_bronze 8",
+		icon: "advgenerators:turbine_kit_bronze 64",
 		item: "advgenerators:turbine_kit_bronze",
-		count: 8
+		count: 64
 	},
 	{
-		icon: "advgenerators:turbine_kit_adv_alloy 4",
+		icon: "advgenerators:turbine_kit_adv_alloy 16",
 		item: "advgenerators:turbine_kit_adv_alloy",
-		count: 4
+		count: 16
 	},
 	{
-		icon: "advgenerators:turbine_kit_manyullyn 2",
+		icon: "advgenerators:turbine_kit_manyullyn 4",
 		item: "advgenerators:turbine_kit_manyullyn",
-		count: 2
+		count: 4
 	},
 	{
 		item: "advgenerators:turbine_kit_enderium"
