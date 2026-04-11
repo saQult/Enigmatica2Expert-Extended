@@ -22,9 +22,9 @@ import { resolve } from 'pathe'
 import { replaceInFile } from 'replace-in-file'
 import { $, fs, retry } from 'zx'
 
-import { commitAmend, getIgnoredFiles, removeFiles } from './build/build_utils'
-import { manageSFTP } from './build/sftp'
-import { generateChangelog } from './tools/changelog/changelog'
+import { commitAmend, getIgnoredFiles, removeFiles } from './build/build_utils.js'
+import { manageSFTP } from './build/sftp.js'
+import { generateChangelog } from './tools/changelog/changelog.js'
 
 const { existsSync, readFileSync } = fs
 const $$ = $({ stdio: 'inherit', verbose: true })

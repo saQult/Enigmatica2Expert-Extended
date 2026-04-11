@@ -48,11 +48,11 @@
       "inverted": false
     },
     {
-      "name": "nbt_all_values",
+      "name": "id",
       "inverted": false
     },
     {
-      "name": "id",
+      "name": "nbt_all_values",
       "inverted": false
     }
   ],
