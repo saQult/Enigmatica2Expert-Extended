@@ -265,6 +265,14 @@
 				Unbreakable: 1b
 			}
 		}
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "rare",

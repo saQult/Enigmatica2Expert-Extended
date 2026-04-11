@@ -724,6 +724,14 @@
 			},
 			id: "astralsorcery:itemtunedcelestialcrystal"
 		}
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "mythic"
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "legendary",

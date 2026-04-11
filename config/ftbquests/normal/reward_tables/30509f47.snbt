@@ -7,6 +7,14 @@
 		count: 16
 	},
 	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "uncommon"
+			}
+		}
+	},
+	{
 		icon: {
 			Count: 4,
 			tag: {
