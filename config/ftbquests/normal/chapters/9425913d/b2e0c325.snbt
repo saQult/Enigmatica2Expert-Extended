@@ -27,6 +27,12 @@
 			tag: {
 				type: "storage"
 			}
+		},
+		{
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "materials"
+			}
 		}],
 		count: 24L
 	}],
