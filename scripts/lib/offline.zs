@@ -61,6 +61,18 @@ zenClass Op {
     });
   }
 
+  // Private: write key/value directly to world NBT, no online check
+  function persistToNBT(uuid as string, key as string, value as string) as void {
+    val overworld = IWorld.getFromID(0);
+    overworld.setCustomWorldData(overworld.getCustomWorldData().deepUpdate({
+      offline: {
+        [uuid]: {
+          [key]: value
+        },
+      }
+    }, mods.zenutils.DataUpdateOperation.MERGE));
+  }
+
   function save(player as IPlayer) as void {
     for key, fnc in getRegistry.map {
       set(player.uuid, key, fnc.fnc(player, null));
@@ -91,23 +103,14 @@ zenClass Op {
     return value.asString();
   }
 
-  // Set value for specified player, assuming he is offline
+  // Set value for specified player, assuming he may be offline
   function set(uuid as string, key as string, value as string) as void {
-    if (isNull(uuid)) return; // no player provided
+    if (isNull(uuid)) return;
     val owner = server.getPlayerByUUID(uuid);
     if (!isNull(owner)) {
-      setRegistry.map[key].fnc(owner, value);
-      return;
+      setRegistry.map[key].fnc(owner, value); // apply live
     }
-
-    val overworld = IWorld.getFromID(0);
-    overworld.setCustomWorldData(overworld.getCustomWorldData().deepUpdate({
-      offline: {
-        [uuid]: {
-          [key]: value
-        },
-      }
-    }, mods.zenutils.DataUpdateOperation.MERGE));
+    persistToNBT(uuid, key, value); // always persist
   }
 }
 
