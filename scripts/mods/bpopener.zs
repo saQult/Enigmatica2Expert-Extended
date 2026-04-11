@@ -49,8 +49,6 @@ add(<thaumadditions:crystal_bag>);
 add(<thermalexpansion:satchel:*>);
 add(<travelersbackpack:travelers_backpack:*>);
 add(<botania:flowerbag>);
-add(<aeadditions:terminal.universal.wireless>);
-add(<aeadditions:terminal.gas.wireless>);
 add(<ae2fc:wireless_fluid_pattern_terminal>);
 add(<appliedenergistics2:wireless_crafting_terminal>);
 add(<appliedenergistics2:wireless_pattern_terminal>);
