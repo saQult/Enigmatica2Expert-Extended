@@ -105,24 +105,6 @@ recipes.addShapedMirrored('Wireless RF Battery',
     [<ore:gemRedstone>, <immersiveengineering:metal_decoration0:3>, <ore:gemRedstone>],
     [<extrautils2:decorativesolid:3>, <ore:blockRedstone>, <extrautils2:decorativesolid:3>]]);
 
-craft.remake(<extrautils2:rainbowgenerator>, ['pretty',
-  '⌃ ⌃ ⌃ ⌃ ⌃ ⌃ ⌃',
-  '⌃ ■ ■ a ■ ■ ⌃',
-  '⌃ ■ ▬ ▬ ▬ ■ ⌃',
-  '⌃ O s i s O ⌃',
-  '⌃ ■ ▬ ▬ ▬ ■ ⌃',
-  '⌃ ■ ■ R ■ ■ ⌃',
-  '⌃ ⌃ ⌃ ⌃ ⌃ ⌃ ⌃'], {
-  '⌃': <extrautils2:decorativesolid:6>,
-  '■': <chisel:futura:2>,
-  'a': <extrautils2:rainbowgenerator:2>,
-  '▬': <ore:ingotGold198>,
-  'O': <extrautils2:opinium:5>,
-  's': <contenttweaker:ball_singularity>.withTag({ completed: 1 as byte }),
-  'i': <contenttweaker:machine_case_singularity>.withTag({ completed: 1 as byte }),
-  'R': <extrautils2:rainbowgenerator:1>,
-});
-
 // Transper Pipe
 recipes.remove(<extrautils2:pipe>);
 recipes.addShaped('Transfer Pipe',

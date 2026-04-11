@@ -408,3 +408,15 @@ craft.remake(<draconicevolution:reactor_part:2>, ['pretty',
   'D': <draconicevolution:draconic_core>, // Draconic Core
   '☼': <ore:gearDraconium>,               // Draconium Gear
 });
+
+// Cheaper magnets to allow early game usage
+craft.remake(<draconicevolution:magnet>, ['pretty',
+  'I I',
+  '▬ ▬'], {
+  'I': <cyclicmagic:magnet_block>,
+  '▬': <ore:ingotDraconium>,
+});
+craft.reshapeless(<draconicevolution:magnet:1>, 'ID', {
+  'I': <draconicevolution:magnet>,
+  'D': <draconicevolution:infused_obsidian>,
+});

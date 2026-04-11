@@ -180,9 +180,10 @@ key_key.ftbutilities.trash:211:NONE:
 key_key.fullscreen:0:NONE:
 key_key.fuzzy:0:NONE:
 key_key.gridfixy:79:NONE:
-key_key.gridhere:35:NONE:
+key_key.gridhere:0:NONE:
 key_key.gridspawns:0:NONE:
 key_key.groovyscript.reload:19:CONTROL:29
+key_key.hei.bookmarkToTop:30:SHIFT:42
 key_key.hei.crafting:46:SHIFT:42
 key_key.hei.toggleBookmarkOverlay:0:NONE:
 key_key.hotbar.1:2:NONE:
@@ -221,7 +222,7 @@ key_key.jeiutilities.transferRecipe:17:CONTROL:29
 key_key.jeiutilities.transferRecipeMax:20:CONTROL:29
 key_key.jump:57:NONE:
 key_key.keyExtraCraftin:0:NONE:
-key_key.keyExtraInvo:18:ALT:56
+key_key.keyExtraInvo:18:CONTROL:29
 key_key.keyWheel:0:NONE:
 key_key.left:30:NONE:
 key_key.little.config:46:CONTROL:29
@@ -243,11 +244,11 @@ key_key.nutrition:49:NONE:
 key_key.open_advanced_extended_wireless_crafting_terminal:0:NONE:
 key_key.open_danknull.desc:0:NONE:
 key_key.open_menu:19:NONE:
-key_key.open_wireless_crafting_terminal.desc:18:CONTROL:29
+key_key.open_wireless_crafting_terminal.desc:18:SHIFT:42
 key_key.open_wireless_fluid_terminal.desc:33:SHIFT:42
 key_key.open_wireless_interface_terminal.desc:23:SHIFT:42
 key_key.open_wireless_pattern_terminal.desc:19:SHIFT:42
-key_key.open_wireless_terminal.desc:20:SHIFT:42
+key_key.open_wireless_terminal.desc:18:SHIFT:42
 key_key.otghud.desc:24:NONE:
 key_key.pickItem:-98:NONE:
 key_key.ping:62:NONE:
@@ -440,6 +441,7 @@ key_key.effortlessbuilding.mode.desc:56:NONE:
 key_key.effortlessbuilding.redo.desc:21:CONTROL:29
 key_key.effortlessbuilding.replace.desc:74:NONE:
 key_key.effortlessbuilding.undo.desc:44:CONTROL:29
+key_key.hei.recipeBookmark:30:CONTROL:29
 key_key.hitindication.toggle_block_indicators:80:NONE:
 key_key.hitindication.toggle_edge_of_screen_mode:71:NONE:
 key_key.hitindication.toggle_hit_indication:72:NONE:

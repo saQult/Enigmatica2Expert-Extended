@@ -94,7 +94,7 @@ val coinMap = {
   <contenttweaker:coin_endsteel>                 : { energyData: 218585, inputItem: { id: 'enderio:item_alloy_ingot', Damage: 8 } },
   <contenttweaker:coin_energium>                 : { energyData: 1254500, inputItem: { id: 'tconevo:metal', Damage: 35 } },
   <contenttweaker:coin_enhancedender>            : { energyData: 561750, inputItem: { id: 'extendedcrafting:material', Damage: 48 } },
-  <contenttweaker:coin_essenceinfused>           : { energyData: 390000, inputItem: { id: 'tconevo:metal', Damage: 15 } },
+  <contenttweaker:coin_essenceinfused>           : { energyData: 780000, inputItem: { id: 'tconevo:metal', Damage: 15 } },
   <contenttweaker:coin_firedragonsteel>          : { energyData: 635625, inputItem: { id: 'iceandfire:dragonsteel_fire_ingot', Damage: 0 } },
   <contenttweaker:coin_fluixsteel>               : { energyData: 335000, inputItem: { id: 'threng:material', Damage: 0 } },
   <contenttweaker:coin_fluxedelectrum>           : { energyData: 149500, inputItem: { id: 'redstonearsenal:material', Damage: 32 } },

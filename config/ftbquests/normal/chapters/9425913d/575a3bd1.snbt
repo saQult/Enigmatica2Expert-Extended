@@ -27,12 +27,6 @@
 			tag: {
 				type: "generators"
 			}
-		},
-		{
-			id: "ftbquests:lootcrate",
-			tag: {
-				type: "materials"
-			}
 		}],
 		count: 16L
 	}],

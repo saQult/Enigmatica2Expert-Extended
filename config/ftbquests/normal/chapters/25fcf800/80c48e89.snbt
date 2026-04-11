@@ -7,7 +7,7 @@
 		"{q.environmental_tech.nano_bot_beacon.desc}"
 	],
 	dependencies: [
-		"b2bc3ad7"
+		"281b6528"
 	],
 	tasks: [{
 		uid: "d9773714",

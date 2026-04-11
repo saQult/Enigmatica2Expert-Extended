@@ -304,6 +304,8 @@ Purge(<enderio:item_material:9>);
 Purge(<thermalfoundation:material:22>).ores([<ore:gearWood>]).aspects();
 Purge(<thermalfoundation:material:656>);
 Purge(<ae2stuff:visualiser>);
+Purge(<aeadditions:terminal.universal.wireless>);
+Purge(<aeadditions:terminal.gas.wireless>);
 Purge(<itemfilters:filter>);
 Purge(<excompressum:ore_smasher>);
 Purge(<forestry:gear_bronze>).ores([<ore:gearBronze>]);

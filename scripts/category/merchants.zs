@@ -355,33 +355,33 @@ val merchData = {
   //     ],
   //   },
   // },
-  // "immersiveengineering:engineer": {
-  //   "immersiveengineering.engineer": {
-  //     4: [
-  //       [],
-  //     ],
-  //   },
-  //   "immersiveengineering.machinist": {
-  //     6: [
-  //       [],
-  //     ],
-  //   },
-  //   "immersiveengineering.electrician": {
-  //     5: [
-  //       [],
-  //     ],
-  //   },
-  //   "immersiveengineering.outfitter": {
-  //     4: [
-  //       [],
-  //     ],
-  //   },
-  //   "immersiveengineering.gunsmith": {
-  //     6: [
-  //       [],
-  //     ],
-  //   },
-  // },
+  "immersiveengineering:engineer": {
+    //   "immersiveengineering.engineer": {
+    //     4: [
+    //       [],
+    //     ],
+    //   },
+    //   "immersiveengineering.machinist": {
+    //     6: [
+    //       [],
+    //     ],
+    //   },
+    "immersiveengineering.electrician": {
+      5: [
+        [E * 18, <industrialforegoing:range_addon:8>],
+      ],
+    },
+    //   "immersiveengineering.outfitter": {
+    //     4: [
+    //       [],
+    //     ],
+    //   },
+    //   "immersiveengineering.gunsmith": {
+    //     6: [
+    //       [],
+    //     ],
+    //   },
+  },
   // "extrautils2:alchemist": {
   //   "alchemist": {
   //     3: [

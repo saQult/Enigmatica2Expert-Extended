@@ -631,7 +631,13 @@
 		}
 	},
 	{
-		item: "psicosts:psi_cell 1 3"
+		item: {
+			id: "psicosts:psi_cell",
+			Damage: 3s,
+			tag: {
+				PsioCharge: 2560000
+			}
+		}
 	}],
 	loot_crate: {
 		string_id: "storage",

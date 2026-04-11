@@ -25,3 +25,14 @@ op.addSpeedupBlock(<immersiveengineering:stone_decoration_stairs_hempcrete>, 1.4
 op.addSpeedupBlock(<immersiveengineering:stone_decoration_stairs_concrete>, 1.45);
 op.addSpeedupBlock(<immersiveengineering:stone_decoration_stairs_concrete_tile>, 1.45);
 op.addSpeedupBlock(<immersiveengineering:stone_decoration_stairs_concrete_leaded>, 1.45);
+
+op.addSpeedupBlock(<immersiveengineering:metal_decoration1>, function (state as IBlockState) as double {
+    val type = state.getPropertyValue('type');
+    return type == 'STEEL_SCAFFOLDING_2' || type == 'ALUMINUM_SCAFFOLDING_2' ? 1.35 : 0.0;
+  });
+op.addSpeedupBlock(<immersiveengineering:metal_decoration1_slab>, function (state as IBlockState) as double {
+    val type = state.getPropertyValue('type');
+    return type == 'STEEL_SCAFFOLDING_2' || type == 'ALUMINUM_SCAFFOLDING_2' ? 1.35 : 0.0;
+  });
+op.addSpeedupBlock(<immersiveengineering:steel_scaffolding_stairs2>, 1.35);
+op.addSpeedupBlock(<immersiveengineering:aluminum_scaffolding_stairs2>, 1.35);

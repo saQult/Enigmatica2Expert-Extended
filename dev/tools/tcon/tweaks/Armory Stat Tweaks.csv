@@ -62,7 +62,7 @@ energetic_alloy,,,,,,
 energetic_metal,,,,,,
 enori_crystal,,,,,,
 erodium,,,,,,
-essence_metal,,,,,,
+essence_metal,*2,*2,+0.5,*2,,*2
 fierymetal,,,,,,
 fireproof,,,,,,
 firewood,,,,,,

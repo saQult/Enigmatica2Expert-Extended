@@ -73,17 +73,17 @@
   <capacitor key="enderio:block_simple_stirling_generator/buffer"   base="225000"   scaler="FIXED" />
   <capacitor key="enderio:block_simple_stirling_generator/gen"      base="440"      scaler="FIXED" />
 
-  <capacitor key="enderio:block_zombie_generator/loss"              base="0"        scaler="FIXED" />
-  <capacitor key="enderio:block_zombie_generator/buffer"            base="4000000"  scaler="POWER" />
-  <capacitor key="enderio:block_zombie_generator/gen"               base="12800"    scaler="CHEMICAL" />
+  <capacitor key="enderio:block_zombie_generator/loss"              base="0"         scaler="FIXED" />
+  <capacitor key="enderio:block_zombie_generator/buffer"            base="20000000"  scaler="POWER" />
+  <capacitor key="enderio:block_zombie_generator/gen"               base="64000"     scaler="CHEMICAL" />
     
-  <capacitor key="enderio:block_franken_zombie_generator/loss"      base="0"        scaler="CENT" />
-  <capacitor key="enderio:block_franken_zombie_generator/buffer"    base="8000000"  scaler="POWER" />
-  <capacitor key="enderio:block_franken_zombie_generator/gen"       base="25600"    scaler="CHEMICAL" />
+  <capacitor key="enderio:block_franken_zombie_generator/loss"      base="0"         scaler="CENT" />
+  <capacitor key="enderio:block_franken_zombie_generator/buffer"    base="40000000"  scaler="POWER" />
+  <capacitor key="enderio:block_franken_zombie_generator/gen"       base="128000"    scaler="CHEMICAL" />
 
-  <capacitor key="enderio:block_ender_generator/loss"               base="0"        scaler="CENT" />
-  <capacitor key="enderio:block_ender_generator/buffer"             base="10000000" scaler="POWER" />
-  <capacitor key="enderio:block_ender_generator/gen"                base="10800"    scaler="CHEMICAL" />
+  <capacitor key="enderio:block_ender_generator/loss"               base="0"         scaler="CENT" />
+  <capacitor key="enderio:block_ender_generator/buffer"             base="300000000" scaler="POWER" />
+  <capacitor key="enderio:block_ender_generator/gen"                base="324000"    scaler="CHEMICAL" />
   
   <capacitor key="enderio:block_attractor_obelisk/intake"           base="5000"     scaler="QUADRATIC" />
   <capacitor key="enderio:block_attractor_obelisk/buffer"           base="100000"   scaler="POWER" />

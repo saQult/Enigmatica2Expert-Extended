@@ -122,15 +122,24 @@ scripts.mods.extendedcrafting_engineering.remakeAlted(
   '■': <mekanism:plasticblock:15>,
 });
 
+// Harder since doesnt require complicated setup and easy to supply
 craft.remake(<industrialforegoing:mob_duplicator>, ['pretty',
-  'R R R',
-  'B a B',
-  'M i M'], {
-  'R': <ore:itemRubber>,
-  'B': <exnihilocreatio:item_doll:*>,
-  'a': <teslacorelib:machine_case>,
+  '⌃ ⌃ ■ ■ ■ ⌃ ⌃',
+  '⌃ M D D D M ⌃',
+  '■ f ▬ ▬ ▬ f ■',
+  '■ R s i s R ■',
+  '■ f ▬ ▬ ▬ f ■',
+  '⌃ M D D D M ⌃',
+  '⌃ ⌃ ■ ■ ■ ⌃ ⌃'], {
+  '⌃': <extrautils2:decorativesolid:6>,
+  '■': <mekanism:plasticblock:*>,
   'M': <darkutils:monolith>,
-  'i': <contenttweaker:machine_case_singularity>.withTag({ completed: 1 as byte }),
+  'D': <iceandfire:dragon_ice_spikes>,
+  'f': <industrialforegoing:fertilizer>,
+  '▬': <ore:ingotGold198>,
+  'R': <industrialforegoing:laser_lens:*>,
+  's': <contenttweaker:ball_singularity>.withTag({completed: 1 as byte}),
+  'i': <contenttweaker:machine_case_singularity>.withTag({completed: 1 as byte}),
 });
 
 // [Laser Drill] from [Machine Frame][+4]
@@ -221,12 +230,39 @@ remake('Mob Crusher 2',   <industrialforegoing:mob_relocator>, [
   [<randomthings:imbue:2>, <teslacorelib:machine_case>, <randomthings:imbue:2>],
   [<ore:gearGold>, <opencomputers:robot>, <ore:gearGold>]]);
 
+// Harder Essence-Infused Ingot
+mods.industrialforegoing.FluidSievingMachine.remove(<tconevo:metal:15>);
+mods.tconstruct.Alloy.addRecipe(<liquid:essence_metal> * 144, [
+  <liquid:if.ore_fluid_fermented>.withTag({Ore: "oreTitanium"}) * 300,
+  <liquid:empoweredoil> * 250,
+  <liquid:essence> * 160,
+]);
+mods.tconstruct.Alloy.addRecipe(<liquid:essence_metal> * 144, [
+  <liquid:if.ore_fluid_fermented>.withTag({Ore: "oreTitanium"}) * 300,
+  <liquid:empoweredoil> * 250,
+  <liquid:experience> * 160,
+]);
+mods.tconstruct.Alloy.addRecipe(<liquid:essence_metal> * 144, [
+  <liquid:if.ore_fluid_fermented>.withTag({Ore: "oreTitanium"}) * 300,
+  <liquid:empoweredoil> * 250,
+  <liquid:xpjuice> * 160,
+]);
+
 // More sludge outputs
+mods.industrialforegoing.SludgeRefiner.remove(<minecraft:clay_ball>);
+mods.industrialforegoing.SludgeRefiner.remove(<minecraft:clay>);
+mods.industrialforegoing.SludgeRefiner.remove(<minecraft:dirt>);
+mods.industrialforegoing.SludgeRefiner.remove(<minecraft:gravel>);
+mods.industrialforegoing.SludgeRefiner.remove(<minecraft:sand>);
+mods.industrialforegoing.SludgeRefiner.remove(<minecraft:sand:1>);
 mods.industrialforegoing.SludgeRefiner.add(<rustic:fertile_soil>, 10);
 mods.industrialforegoing.SludgeRefiner.add(<thermalfoundation:material:816>, 10);
 mods.industrialforegoing.SludgeRefiner.add(<forestry:fertilizer_bio>, 10);
 mods.industrialforegoing.SludgeRefiner.add(<forestry:mulch>, 10);
 mods.industrialforegoing.SludgeRefiner.add(<thaumcraft:nugget:10>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<tconstruct:soil:5>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<randomthings:fertilizeddirt>, 10);
+mods.industrialforegoing.SludgeRefiner.add(<floralchemy:flooded_soil>, 10);
 
 // Fluid Extractor
 mods.industrialforegoing.Extractor.add(<integrateddynamics:menril_log>, <fluid:menrilresin> * 5);
@@ -420,3 +456,25 @@ for i, dye in scripts.vars.oreDye {
 
 // Fast plastic alt
 scripts.process.alloy([<industrialforegoing:dryrubber>], <industrialforegoing:plastic> * 9, 'only: AdvRockArc');
+
+// Use more modded ingredients
+craft.remake(<industrialforegoing:wither_builder>, ['pretty',
+  'R ~ R',
+  'D C D',
+  'f f f'], {
+  'R': <industrialforegoing:plastic>,
+  '~': LiquidIngr("if.protein"),
+  'D': <iceandfire:dragon_ice_spikes>,
+  'C': <teslacorelib:machine_case>,
+  'f': <industrialforegoing:fertilizer>,
+});
+craft.remake(<industrialforegoing:villager_trade_exchanger>, ['pretty',
+  'R ~ R',
+  '* C *',
+  'R ¤ R'], {
+  'R': <industrialforegoing:plastic>,
+  '~': LiquidIngr("if.protein"),
+  '*': <ore:crystalEmeraldic>,
+  'C': <teslacorelib:machine_case>,
+  '¤': <ore:gearGold>,
+});

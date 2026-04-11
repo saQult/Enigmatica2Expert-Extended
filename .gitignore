@@ -26,7 +26,6 @@
 /hei_bookmarks.ini
 /hei_favorites.ini
 /home
-/icon.png
 /knownkeys.txt
 /libraries
 /llibrary
@@ -104,6 +103,7 @@ config/ometweaks/modules.cfg
 config/opencomputers/default.recipes
 config/opencomputers/gregtech.recipes
 config/opencomputers/hardmode.recipes
+config/packcompanion
 config/precisionmining
 config/smoothfont/smoothfont.cfg
 config/tellme

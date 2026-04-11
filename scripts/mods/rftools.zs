@@ -347,6 +347,68 @@ mods.mekanism.infuser.addRecipe('REDSTONE', 160, <rftoolscontrol:card_base>, <rf
 recipes.remove(<rftoolscontrol:cpu_core_1000>);
 mods.mekanism.infuser.addRecipe('DIAMOND', 160, <rftoolscontrol:cpu_core_500>, <rftoolscontrol:cpu_core_1000>);
 
+// Remake all absorbers with harder recipes
+recipes.removeByRecipeName("rftoolsdim:material_absorber");
+craft.make(<rftoolsdim:material_absorber>, ['pretty',
+  'd ▬ d',
+  'S C S',
+  'd ▬ d'], {
+  'd': <minecraft:dirt:2>,
+  '▬': <ore:ingotEssenceMetal>,
+  'S': <minecraft:sponge>,
+  'C': <rftools:machine_frame>,
+});
+recipes.removeByRecipeName("rftoolsdim:liquid_absorber");
+craft.make(<rftoolsdim:liquid_absorber>, ['pretty',
+  'A ▬ A',
+  'S C S',
+  'A ▬ A'], {
+  'A': <ore:listAllwater>,
+  '▬': <ore:ingotEssenceMetal>,
+  'S': <minecraft:sponge>,
+  'C': <rftools:machine_frame>,
+});
+recipes.removeByRecipeName("rftoolsdim:biome_absorber");
+craft.make(<rftoolsdim:biome_absorber>, ['pretty',
+  'B ▬ B',
+  'S C S',
+  'B ▬ B'], {
+  'B': <randomthings:biomestone:1>,
+  '▬': <ore:ingotEssenceMetal>,
+  'S': <minecraft:sponge>,
+  'C': <rftools:machine_frame>,
+});
+recipes.removeByRecipeName("rftoolsdim:terrain_absorber");
+craft.make(<rftoolsdim:terrain_absorber>, ['pretty',
+  'B ▬ B',
+  'S C S',
+  'B ▬ B'], {
+  'B': <ore:stoneBrimstone>,
+  '▬': <ore:ingotEssenceMetal>,
+  'S': <minecraft:sponge>,
+  'C': <rftools:machine_frame>,
+});
+recipes.removeByRecipeName("rftoolsdim:feature_absorber");
+craft.make(<rftoolsdim:feature_absorber>, ['pretty',
+  'C ▬ C',
+  'S a S',
+  'C ▬ C'], {
+  'C': <ic2:wall:*>,
+  '▬': <ore:ingotEssenceMetal>,
+  'S': <minecraft:sponge>,
+  'a': <rftools:machine_frame>,
+});
+recipes.removeByRecipeName("rftoolsdim:time_absorber");
+craft.make(<rftoolsdim:time_absorber>, ['pretty',
+  '# ▬ #',
+  'S C S',
+  '# ▬ #'], {
+  '#': <twilightforest:time_planks>,
+  '▬': <ore:ingotEssenceMetal>,
+  'S': <minecraft:sponge>,
+  'C': <rftools:machine_frame>,
+});
+
 // Non-dimensional source of "levarG"
 val MA = <rftoolsdim:material_absorber>.withTag({meta: 0, absorbing: 0, block: "minecraft:stone"});
 val FG = <rftoolsdim:fake_gravel>;
@@ -397,4 +459,15 @@ craft.remake(<rftools:machine_infuser>, ['pretty',
   '*': <ore:gemCrystalFlux>,      // Flux Crystal
   '¤': <ore:gearDiamond>,         // Diamond Gear
   '◙': <rftools:machine_frame>,   // Machine Frame
+});
+
+// Use more modded ingredients
+craft.remake(<rftools:spawner>, ['pretty',
+  'f ~ f',
+  'D C D',
+  'f D f'], {
+  'f': <industrialforegoing:fertilizer>,
+  '~': LiquidIngr("if.protein"),
+  'D': <iceandfire:dragon_ice_spikes>,
+  'C': <rftools:machine_frame>,
 });

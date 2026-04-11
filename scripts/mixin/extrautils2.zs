@@ -1,10 +1,16 @@
 #modloaded extrautils2
 #loader mixin
 
-import native.net.minecraft.util.EnumActionResult;
+import mixin.CallbackInfoReturnable;
+import mixin.Operation;
+import mixin.CallbackInfo;
+import native.com.rwtema.extrautils2.api.machine.IMachineRecipe;
 import native.com.rwtema.extrautils2.api.machine.Machine;
+import native.com.rwtema.extrautils2.api.machine.MachineRecipeRegistry;
 import native.com.rwtema.extrautils2.api.machine.MachineRegistry;
 import native.com.rwtema.extrautils2.api.machine.XUMachineCrusher;
+import native.com.rwtema.extrautils2.api.machine.XUMachineGenerators;
+import native.com.rwtema.extrautils2.machine.EnergyBaseRecipe;
 import native.com.rwtema.extrautils2.network.XUPacketBuffer;
 import native.com.rwtema.extrautils2.tile.TileCreativeHarvest;
 import native.com.rwtema.extrautils2.blocks.BlockCreativeHarvest;
@@ -12,7 +18,9 @@ import native.com.rwtema.extrautils2.transfernodes.Upgrade;
 import native.com.rwtema.extrautils2.itemhandler.SingleStackHandler;
 import native.net.minecraftforge.items.IItemHandler;
 import native.net.minecraftforge.items.ItemHandlerHelper;
-import mixin.CallbackInfo;
+import native.java.lang.Integer;
+import native.net.minecraft.item.ItemStack;
+import native.net.minecraft.util.EnumActionResult;
 
 #mixin {targets: "com.rwtema.extrautils2.tile.TileTerraformer$ContainerTerraformer$3"}
 zenClass MixinTileTerraformerContainerTextArea {
@@ -123,6 +131,25 @@ zenClass MixinMachineInit {
     function buffMachineCapacityAndTransfer(value as int) as int {
         return min(2000000000 / 64, value * 300);
     }
+
+    /*
+      Remove all Pink Generator recipes to rewrite them completely to custom
+    */
+    #mixin Static
+    #mixin WrapOperation
+    #{
+    #    method: "addMachineRecipes",
+    #    at: {
+    #        value: "INVOKE",
+    #        target: "Lcom/rwtema/extrautils2/api/machine/MachineRecipeRegistry;addRecipe(Lcom/rwtema/extrautils2/api/machine/IMachineRecipe;)V"
+    #    }
+    #}
+    function removePinkGenRecipes(registry as MachineRecipeRegistry, recipe as IMachineRecipe, original as Operation) as void {
+        if (!isNull(XUMachineGenerators.PINK_GENERATOR) && registry == XUMachineGenerators.PINK_GENERATOR.recipes_registry) {
+            return;
+        }
+        original.call(registry, recipe);
+    }
 }
 
 /*
@@ -172,5 +199,33 @@ zenClass MixinTransferNodeItem {
             stack.insertItem(0, b, false);
             break;
         }
+    }
+}
+
+#mixin {targets: "com.rwtema.extrautils2.machine.BrewingEnergyRecipe"}
+zenClass MixinBrewingEnergyRecipe extends EnergyBaseRecipe {
+
+    /*
+      Only keep high-tier potions in the generator
+    */
+    #mixin Inject {method: "getInputValues", at: {value: "RETURN"}, cancellable: true}
+    function filterInputValues(cir as CallbackInfoReturnable) as void {
+        val original as [ItemStack] = cir.getReturnValue();
+        var filtered = [] as [ItemStack];
+        for stack in original {
+            if (this.getEnergyOutput(stack) >= 409600 * 30) {
+                filtered.add(stack);
+            }
+        }
+        cir.setReturnValue(filtered);
+    }
+
+    /*
+      Multiply energy output
+    */
+    #mixin Inject {method: "getEnergyOutput", at: {value: "RETURN"}, cancellable: true}
+    function multiplyEnergyOutput(stack as ItemStack, cir as CallbackInfoReturnable) as void {
+        val originalEnergy = cir.getReturnValue() as Integer as int;
+        cir.setReturnValue(originalEnergy * 30);
     }
 }

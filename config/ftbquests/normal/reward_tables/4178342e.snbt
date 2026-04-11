@@ -78,14 +78,14 @@
 		count: 48
 	},
 	{
-		icon: "ic2:upgrade 16 2",
+		icon: "ic2:upgrade 64 2",
 		item: "ic2:upgrade 1 2",
-		count: 16
+		count: 64
 	},
 	{
-		icon: "ic2:upgrade 12",
+		icon: "ic2:upgrade 16",
 		item: "ic2:upgrade",
-		count: 12
+		count: 16
 	},
 	{
 		item: "industrialforegoing:range_addon 1 11"
@@ -252,12 +252,25 @@
 		item: "tconevo:material 1 2"
 	},
 	{
+		icon: "actuallyadditions:block_greenhouse_glass 4",
+		item: "actuallyadditions:block_greenhouse_glass",
+		count: 4
+	},
+	{
 		item: {
 			id: "thaumicwonders:alienist_stone",
 			tag: {
 				enchantmentColor: 14602026,
 				ench: [{}],
 				Unbreakable: 1b
+			}
+		}
+	},
+	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "legendary"
 			}
 		}
 	}],

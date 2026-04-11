@@ -43,6 +43,14 @@
 		item: "tconstruct:materials 1 16"
 	},
 	{
+		item: {
+			id: "ftbquests:lootcrate",
+			tag: {
+				type: "rare"
+			}
+		}
+	},
+	{
 		item: "conarm:gauntlet_mat_attack"
 	},
 	{

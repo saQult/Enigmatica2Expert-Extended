@@ -5,6 +5,7 @@ config/IC2.ini filter=ic2_config_date_update
 # › git config filter.remove_date.clean "sed 's/#... ... .*$//'"
 config/splash.properties filter=remove_date
 config/craftpresence.properties filter=remove_date
+config/packetfixer.properties filter=remove_date
 
 # ℹ️ Remove the enchantment list, as it changes when mods are added or removed.
 # › git config filter.as_config_cleanup.clean "sed '/default: /d'"
