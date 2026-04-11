@@ -661,6 +661,7 @@ q.immersive_engineer.factory_block_placer.desc=Greatly place saplings above the 
 q.immersive_engineer.improved_blast_fur.name=Improved Blast Furnace
 q.immersive_engineer.improved_blast_fur.desc=You can automate this one.
 q.immersive_engineer.item_router.desc=Spread items evenly and have filtering options.
+q.immersive_engineer.factory_hopper.desc=This hopper is capable of transferring half a stack of items per operation, as well as transferring items from bottom to top.
 q.immersive_engineer.kinetic_dynamo.desc=The Kinetic Dynamo produces power when either an operational Windmill or Watermill is attached to it.
 q.immersive_engineer.hv_energy.name=HV Energy
 q.immersive_engineer.hv_energy.desc=HV, High Voltage, is the highest power transfer rate in Immersive Engineering. In this pack, it's 524288 RF/t, per connection.

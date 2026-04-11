@@ -1,4 +1,4 @@
-﻿#PARSE_ESCAPES
+#PARSE_ESCAPES
 q.getting_started.name=§bНачало работы
 q.getting_started.desc=Эта глава объясняет, как начать работу с модпаком.
 q.getting_started.skyblock.desc=Добро пожаловать в режим Skyblock! Эти задания будут служить руководством на раннем этапе игры.
@@ -661,6 +661,7 @@ q.immersive_engineer.factory_block_placer.desc=Greatly place saplings above the 
 q.immersive_engineer.improved_blast_fur.name=Улучшенная доменная печь
 q.immersive_engineer.improved_blast_fur.desc=Лучший способ сделать сталь.
 q.immersive_engineer.item_router.desc=Spread items evenly and have filtering options.
+q.immersive_engineer.factory_hopper.desc=Эта воронка способна передавать по пол стака предметов за операцию, а так же передавать предметы снизу вверх.
 q.immersive_engineer.kinetic_dynamo.desc=Кинетическое динамо производит энергию, когда к нему подключена ветряная или водяная мельница.
 q.immersive_engineer.hv_energy.name=HV Energy
 q.immersive_engineer.hv_energy.desc=HV, High Voltage, является самой высокой скоростью передачи энергии в Immersive Engineering. В этом паке это 524288 RF/т за соединение.

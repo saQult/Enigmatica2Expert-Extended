@@ -1,4 +1,4 @@
-﻿#PARSE_ESCAPES
+#PARSE_ESCAPES
 q.getting_started.name=§b最初的一步
 q.getting_started.desc=这一章解释了本整合包如何起步。
 q.getting_started.skyblock.desc=你正在玩空岛模式。一些任务会帮助你度过早期游戏阶段
@@ -659,6 +659,7 @@ q.immersive_engineer.factory_block_placer.desc=可以大规模地在地面上放
 q.immersive_engineer.improved_blast_fur.name=强化高炉
 q.immersive_engineer.improved_blast_fur.desc=这个可以实现自动化。
 q.immersive_engineer.item_router.desc=均匀分配物品并具有过滤选项。
+q.immersive_engineer.factory_hopper.desc=这个漏斗每次操作能够传输半组物品，并且能够从下往上传输物品。
 q.immersive_engineer.kinetic_dynamo.desc=临近的风车或水车工作时，动能发电机可以产出能量。
 q.immersive_engineer.hv_energy.name=高压
 q.immersive_engineer.hv_energy.desc=高压（HV）是沉浸工程中最高的能量传输速率。在这个整合包中，它的传输速率为每连接 524288 RF/t。
