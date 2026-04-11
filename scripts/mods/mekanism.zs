@@ -79,11 +79,11 @@ val chemIngrs = {
   '■': <mekanism:plasticblock:*>,            // Grey Plastic Block
   '⌂': <mekanism:basicblock:8>,              // Steel Casing
   '▲': <ore:dustSiliconDioxide>,             // Silicon Dioxide
-  'C': <advancedrocketry:crystallizer>,      // Crystallizer
+  'C': <thermalexpansion:frame:132>,
   'D': <nuclearcraft:gem:1>,
   'E': <mekanism:tierinstaller:2>,           // Elite Tier Installer
   'I': <rftools:infused_diamond>,            // Infused Diamond
-  '*': <extrautils2:suncrystal>,             // Sun Crystal
+  '*': <draconicevolution:energy_crystal>,
   '~': LiquidIngr('sulfuric_acid') | LiquidIngr('sulfuricacid'), // Sulfuric Acid Bucket
   'O': <ic2:te:56>,                          // Ore Washing Plant
 } as IIngredient[string];
