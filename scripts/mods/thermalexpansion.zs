@@ -198,6 +198,12 @@ mods.mekanism.infuser.addRecipe('REDSTONE', 160, <thermalfoundation:material:161
 // Removing Netherrack -> Gravel Pulverizer recipes
 mods.thermalexpansion.Pulverizer.removeRecipe(<minecraft:netherrack>);
 
+// Remove duplicate basalt recipe and replace with Chisel's one
+// Not working since Quark's recipes added by MIA after CT tweaks and can't be removed this way
+// mods.thermalexpansion.Extruder.removeRecipeIgneous(<quark:basalt>);
+// mods.thermalexpansion.Extruder.removeRecipeIgneous(<chisel:basalt2:7>);
+// mods.thermalexpansion.Extruder.addRecipeSedimentary(<chisel:basalt2:7>, 0, 250, 800);
+
 // Making TE alloys meltable
 mods.thermalexpansion.Crucible.addRecipe(<liquid:signalum> * 144, <thermalfoundation:material:165>, 5000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:lumium> * 144, <thermalfoundation:material:166>, 5000);
