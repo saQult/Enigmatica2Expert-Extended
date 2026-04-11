@@ -16,7 +16,7 @@ zenClass Gen {
     gen = getMachine("extrautils2:generator_" + shortName);
   }
 
-  function removeInputs(items as IItemStack[]) as Gen {
+  function removeInputs(items as IIngredient[]) as Gen {
     for item in items {
       if (isNull(item)) continue;
       gen.removeRecipe({ 'input': item });
@@ -33,7 +33,7 @@ zenClass Gen {
   function addRecipes(items as double[IIngredient]) as Gen {
     for item, mult in items {
       if (isNull(item)) continue;
-      val totalRF = mult as long * defaultTime * rft;
+      val totalRF = (mult * defaultTime * rft) as long;
       val cap = 2000000000L;
       val totalRFCapped = min(totalRF, cap);
       val totalRFResidue = totalRF - totalRFCapped;
@@ -85,6 +85,53 @@ slime
 
 */
 
+Gen('tnt')
+.removeInputs([
+  <minecraft:tnt>,
+  <minecraft:gunpowder>,
+])
+//    rf/t, d    h    m    s    t
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_u233>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_u235>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_np237>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_pu239>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_am242>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_cm247>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_bk248>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_cf249>)
+.add(  200, 3 * 24 * 60 * 60 * 20, <trinity:salted_bomb_cf251>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_u233>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_u235>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_np237>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_pu239>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_am242>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_cm247>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_bk248>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_cf249>)
+.add(  200, 4 * 24 * 60 * 60 * 20, <trinity:bomb_cf251>)
+.add(  280, 4 * 24 * 60 * 60 * 20, <trinity:bomb_antimatter>)
+;
+
+val generator_lava = getMachine("extrautils2:generator_lava");
+generator_lava.removeRecipe({ 'input_lava': <liquid:lava> * 50 });
+generator_lava.addRecipe({ 'input_lava': <liquid:enrichedlava> * 50 }, {},
+  //      rf, d    h    m    s    t
+   100000000,          30 * 60 * 20);
+
+val generator_pink = getMachine("extrautils2:generator_pink");
+generator_pink.removeRecipe({ 'input': <*> });
+
+Gen('pink')
+//    rf/t, d    h    m    s    t
+.add( 1600,           1 * 60 * 20, <tconevo:material:1>)
+.add( 1600,           5 * 60 * 20, <industrialforegoing:laser_lens:6>)
+.add( 1000,           5 * 60 * 20, <twilightforest:castle_rune_brick>)
+.add( 1000,           5 * 60 * 20, <twilightforest:castle_door:2>)
+.add( 3000,           1 * 60 * 20, <appliedenergistics2:paint_ball:6>)
+.add( 6000,      1 * 60 * 60 * 20, <enderio:item_alloy_endergy_ingot:4>)
+.add( 2000,     10 * 60 * 60 * 20, <qmd:discharge_lamp:6>)
+;
+
 Gen('netherstar')
 .removeInputs([
   <minecraft:nether_star>,
@@ -92,14 +139,8 @@ Gen('netherstar')
 .setDefaultRFTandTime(4000, 2400)
 .addRecipes({
   <mysticalagradditions:nether_star_essence>: 0.06,
-  <ore:nuggetNetherStar>: 0.11,
-  <extendedcrafting:material:41>: 0.12,
-  <mysticalagradditions:stuff>: 0.5,
-  <minecraft:nether_star>: 1.0,
-  <ore:foodNetherstartoast>: 1.1,
   <extendedcrafting:material:40>: 1.2,
   <mysticalagradditions:special>: 3.0,
-  <ore:blockNetherStar>: 6.0,
   <mysticalagradditions:nether_star_seeds>: 100.0,
 } as double[IIngredient]$orderly);
 
@@ -116,9 +157,8 @@ Gen('ender')
   <forge:bucketfilled>.withTag({Amount:1000, FluidName:"enderium"}),
 ])
 //    rf/t, d    h    m    s    t
-.add(  600,           5 * 60 * 20, <thaumictinkerer:kamiresource>)
+.add( 1600,               10 * 20, <extendedcrafting:material:36>)
 .add( 3000,           5 * 60 * 20, <endreborn:item_ingot_endorium>)
-.add( 3600,           5 * 60 * 20, <extendedcrafting:material:36>)
 .add( 4000,      6 * 60 * 60 * 20, <avaritia:endest_pearl>)
 .add( 6000,           5 * 60 * 20, <thermalfoundation:material:167>)
 .add( 9000,           5 * 60 * 20, <rftools:infused_enderpearl>)
@@ -126,6 +166,12 @@ Gen('ender')
 .add(12000,           5 * 60 * 20, <thermalfoundation:material:895>)
 .add(24000,          10 * 60 * 20, <redstonerepository:material:1>)
 ;
+
+val generator_redstone = getMachine("extrautils2:generator_redstone");
+generator_redstone.removeRecipe({ 'input': <minecraft:redstone>, 'input_lava': <liquid:lava> * 50 });
+generator_redstone.addRecipe({ 'input': <actuallyadditions:item_crystal_empowered>, 'input_lava': <liquid:ic2hot_coolant> * 50 }, {},
+  //      rf, d    h    m    s    t
+   600000000,          30 * 60 * 20);
 
 Gen('dragonsbreath')
 .removeInputs([
@@ -149,7 +195,6 @@ Gen('ice')
 ])
 //    rf/t, d    h    m    s    t
 .add( 1000,     24 * 60 * 60 * 20, <iceandfire:dragonsteel_ice_ingot>)
-.add( 2000,               10 * 20, <iceandfire:dragon_ice>)
 .add( 2000,           5 * 60 * 20, <twilightforest:ice_bomb>)
 .add( 5000,          20 * 60 * 20, <forestry:pollen:1>)
 .add( 5000,          30 * 60 * 20, <thermalfoundation:material:1025>)
@@ -190,3 +235,9 @@ Gen('death')
 .add( 2000,      7 * 60 * 60 * 20, <iceandfire:seaserpent_skull>)
 .add( 2000,      7 * 60 * 60 * 20, <iceandfire:hydra_skull>)
 ;
+
+val generator_slime = getMachine("extrautils2:generator_slime");
+generator_slime.removeRecipe({ 'input': <minecraft:slime_ball> * 4, 'input2': <minecraft:milk_bucket> });
+generator_slime.addRecipe({ 'input': <ore:dropGelatinous>, 'input2': <rats:block_of_cheese> }, {},
+  //      rf, d    h    m    s    t
+   100000000,          40 * 60 * 20);

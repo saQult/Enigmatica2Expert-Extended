@@ -832,6 +832,14 @@ addItems(<ore:infusionCrystal>, [
 // Slimes with TCon is not so rare, so better to keep this item separately
 remove(<ore:slimeball>, <quark:slime_bucket>);
 
+addItems(<ore:dropGelatinous>, [
+  <tconstruct:edible:30>,
+  <tconstruct:edible:31>,
+  <tconstruct:edible:32>,
+  <tconstruct:edible:34>,
+  <tconstruct:edible:33>,
+]);
+
 addItems(<ore:ingotFakeIron>, [<minecraft:iron_ingot>, <enderio:item_alloy_ingot:9>]);
 addItems(<ore:blockFakeIron>, [<minecraft:iron_block>, <enderio:block_alloy:9>]);
 addItems(<ore:nuggetFakeIron>, [<minecraft:iron_nugget>, <enderio:item_alloy_nugget:9>]);
