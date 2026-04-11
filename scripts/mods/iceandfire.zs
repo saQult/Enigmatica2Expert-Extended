@@ -14,6 +14,11 @@ Purge(<iceandfire:armor_silver_metal_chestplate>);
 Purge(<iceandfire:armor_silver_metal_leggings>);
 Purge(<iceandfire:armor_silver_metal_boots>);
 
+// Main obtain ways is:
+// 1. Drgon griefing
+// 2. IF froster
+recipes.remove(<iceandfire:dragon_ice_spikes>);
+
 // *======= Recipes =======*
 
 // Remove too powerful aspects

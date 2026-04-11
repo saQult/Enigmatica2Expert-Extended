@@ -270,6 +270,18 @@ mods.nuclearcraft.DecayHastener.addRecipe(<ore:upgradeDarkSteel>, <enderio:item_
 // Dark Steel Upgrade Expensive, Thermal
 mods.thermalexpansion.InductionSmelter.addRecipe(<enderio:item_dark_steel_upgrade>, <enderio:block_alloy:6>, <minecraft:clay>, 25000);
 
+// Require less electrical steel
+craft.remake(<enderio:item_extract_speed_upgrade>, ['pretty',
+  '▬ ▬ ▬',
+  'D P D',
+  '- ♥ -'], {
+  '▬': <ore:ingotFakeIron>,
+  'D': <iceandfire:dragon_ice_spikes>,
+  'P': <ore:craftingPiston>,
+  '-': <ore:ingotElectricalSteel>,
+  '♥': <ore:torchRedstoneActive>,
+});
+
 // Lava Heat Exchanger
 val machineCaseVariant = <nuclearcraft:part:10> | <teslacorelib:machine_case> | <actuallyadditions:block_misc:9> | <mekanism:basicblock:8>;
 recipes.remove(<enderio:block_lava_generator>);
