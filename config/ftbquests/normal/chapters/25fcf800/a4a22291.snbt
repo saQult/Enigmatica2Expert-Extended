@@ -5,7 +5,7 @@
 		"{q.environmental_tech.void_ore_miner_con.desc}"
 	],
 	dependencies: [
-		"b2bc3ad7"
+		"281b6528"
 	],
 	tasks: [{
 		uid: "2a16e6ef",

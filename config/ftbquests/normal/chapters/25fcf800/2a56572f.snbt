@@ -5,8 +5,7 @@
 		"{q.environmental_tech.structure_frame_ti.desc}"
 	],
 	dependencies: [
-		"d2bbd45a",
-		"b2bc3ad7"
+		"d2bbd45a"
 	],
 	tasks: [{
 		uid: "1bd8c1ce",

@@ -12,7 +12,7 @@
 		uid: "6db5fac8",
 		type: "item",
 		items: [{
-			item: "environmentaltech:litherite_crystal"
+			item: "environmentaltech:structure_frame_1"
 		}]
 	}],
 	rewards: [{

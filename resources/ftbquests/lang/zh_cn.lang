@@ -1875,7 +1875,6 @@ q.environmental_tech.desc=环境科技的任务，是T4的科技模组。
 q.environmental_tech.environmental_tech.name=环境科技
 q.environmental_tech.environmental_tech.desc=欢迎使用环境科技！\n\n这个模组的特点在于巨大的§4多方块机器§0，例如太阳能板或虚空矿石采掘机。\n\n这些多方块结构用装配杆右键各种控制器方块就可以§3自动搭建§0。§4它会告诉你需要的材料。§0只要材料都在背包里，用装配杆右键控制器方块，它就会自己建出来！\n\n想向前推进本章节的任务进度，你从获取大量的§2莱泽尔水晶§0开始。建起你的第一个虚空矿物采掘机（1级），它能产生莱泽尔水晶——以及下一级水晶。用新获得的水晶建起下一级矿物采掘机，重复这个过程直到达到6级。\n\n这些水晶在游戏末期合成中都会用到。
 q.environmental_tech.environmental_tech.reward.1=通知所有人
-q.environmental_tech.structure_frame_ti_5.desc=制作一级多方块机器用到的结构方块。
 q.environmental_tech.void_resource_mine.name=虚空资源采掘机1
 q.environmental_tech.void_resource_mine.desc=虚空资源采掘机凭空产生石头、黑曜石、玻璃等材料。它的激光需要直射基岩或虚空。采掘机的等级越高，工作速度越快。
 q.environmental_tech.nano_bot_beacon.name=纳米机器人信标

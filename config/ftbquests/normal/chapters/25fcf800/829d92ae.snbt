@@ -6,7 +6,7 @@
 		"{q.environmental_tech.solar_array_tier_1.desc}"
 	],
 	dependencies: [
-		"b2bc3ad7"
+		"281b6528"
 	],
 	tasks: [{
 		uid: "a8c7b049",
