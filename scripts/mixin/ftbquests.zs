@@ -45,7 +45,7 @@ zenClass MixinItemTask {
         val actual = stack.func_77978_p();
         if (isNull(actual) || actual.func_82582_d()) return false;
         val keys = expected.func_150296_c().iterator();
-        while (keys.hasNext()) {
+        while keys.hasNext() {
           val key = keys.next() as string;
           if (!Objects.equals(actual.func_74781_a(key), expected.func_74781_a(key))) return false;
         }
@@ -56,6 +56,3 @@ zenClass MixinItemTask {
     return false;
   }
 }
-
-
-

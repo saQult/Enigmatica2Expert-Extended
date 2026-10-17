@@ -29,7 +29,7 @@ zenClass MixinIngredientObserver {
   #  require: 1
   #}
   function pollPreviousObservation(timeout as long) as long {
-    return 0 as long;
+    return 0;
   }
 }
 
@@ -61,13 +61,13 @@ zenClass MixinIngredientPositionsIndex {
   #  require: 1
   #}
   function reusePositionLookup(index as IIngredientMapMutable, prototype as Object, condition as Object, original as Operation) as Collection {
-    if (index.getComponent() != IngredientComponent.ITEMSTACK) return original.call(index, prototype, condition) as Collection;
+    if (index.getComponent() != IngredientComponent.ITEMSTACK) return original.call(index, prototype, condition);
 
     // 7: item, metadata and NBT; 15: also quantity.
     val flags = condition as Integer as int;
-    if (flags != 7 && flags != 15) return original.call(index, prototype, condition) as Collection;
+    if (flags != 7 && flags != 15) return original.call(index, prototype, condition);
     val stack = prototype as ItemStack;
-    if (stack.func_190926_b()) return original.call(index, prototype, condition) as Collection;
+    if (stack.func_190926_b()) return original.call(index, prototype, condition);
 
     if (isNull(this.craftingPerfLookupStacks)) {
       this.craftingPerfLookupStacks = [] as [ItemStack];
@@ -86,12 +86,13 @@ zenClass MixinIngredientPositionsIndex {
     if (flags == 15) {
       val positions = index.get(prototype);
       if (!isNull(positions)) result = Collections.singletonList(positions) as Collection;
-    } else {
+    }
+    else {
       val matcher = index.getComponent().getMatcher();
       val entries = index.iterator();
       var matchedKey as Object = null;
       var ambiguous = false;
-      while (entries.hasNext()) {
+      while entries.hasNext() {
         val entry = entries.next() as Entry;
         val key = entry.getKey();
         if (matcher.matches(prototype, key, condition)) {

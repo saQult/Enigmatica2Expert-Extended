@@ -25,4 +25,3 @@ zenClass MixinTerminalPacketShiftClickOutputOptimized {
     return false;
   }
 }
-

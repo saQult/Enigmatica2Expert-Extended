@@ -26,7 +26,7 @@ zenClass MixinSlotCraftingAutoRefill {
 
   #mixin WrapMethod { method: 'func_190901_a', require: 1 }
   function coalesceCraft(player as EntityPlayer, stack as ItemStack, original as Operation) as ItemStack {
-    if (player.field_70170_p.field_72995_K) return original.call(player, stack) as ItemStack;
+    if (player.field_70170_p.field_72995_K) return original.call(player, stack);
     val previous = scripts.mixin.integratedterminals.shared.Op.activeCraftingTab;
     scripts.mixin.integratedterminals.shared.Op.activeCraftingTab = tabCommon;
     val result = original.call(player, stack) as ItemStack;
@@ -97,4 +97,3 @@ zenClass MixinTerminalStorageIngredientItemStackCraftingGridShiftClickOutput {
     return false;
   }
 }
-

@@ -59,8 +59,8 @@ zenClass MixinElectricTileEntityLaserDrill {
       energyStorage.setCapacity(capacity);
       changed = true;
     }
-    if (energyStorage.getEnergyInputRate() != 100000L) {
-      energyStorage.setEnergyInputRate(100000L);
+    if (energyStorage.getEnergyInputRate() != 100000l) {
+      energyStorage.setEnergyInputRate(100000l);
       changed = true;
     }
     if (changed) this0.forceSync();
